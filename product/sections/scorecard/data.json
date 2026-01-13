@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "models": {
+      "overallScore": "The aggregated score summary showing total points earned, maximum possible points, percentage score, and average per competency.",
+      "competencyScores": "Individual scores for each of the 9 call competencies, with criteria breakdowns showing what was demonstrated.",
+      "criterion": "A single evaluation criterion within a competency - either demonstrated (passed) or not demonstrated (failed)."
+    },
+    "relationships": [
+      "Each Scorecard contains one Overall Score (the summary) and exactly 9 Competency Scores",
+      "Each Competency Score contains multiple Criteria (typically 3) that were evaluated"
+    ]
+  },
+  "overallScore": {
+    "totalPoints": 32,
+    "maxPoints": 45,
+    "percentage": 71,
+    "averageScore": 3.6
+  },
+  "competencyScores": [
+    {
+      "id": "comp-1",
+      "number": 1,
+      "name": "The Greeting",
+      "score": 4,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-1-1", "label": "High energy", "passed": true },
+        { "id": "crit-1-2", "label": "Sharp and to the point", "passed": true },
+        { "id": "crit-1-3", "label": "Fluid, no stuttering", "passed": true }
+      ]
+    },
+    {
+      "id": "comp-2",
+      "number": 2,
+      "name": "Reason for Call",
+      "score": 3,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-2-1", "label": "Strong conviction", "passed": true },
+        { "id": "crit-2-2", "label": "Maintained control", "passed": true },
+        { "id": "crit-2-3", "label": "Fluid, no stuttering", "passed": false }
+      ]
+    },
+    {
+      "id": "comp-3",
+      "number": 3,
+      "name": "Needs Analysis",
+      "score": 3,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-3-1", "label": "Active listening", "passed": true },
+        { "id": "crit-3-2", "label": "Quantified cost of problem", "passed": false },
+        { "id": "crit-3-3", "label": "Established value", "passed": true }
+      ]
+    },
+    {
+      "id": "comp-4",
+      "number": 4,
+      "name": "Qualification",
+      "score": 2,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-4-1", "label": "All criteria evaluated", "passed": false },
+        { "id": "crit-4-2", "label": "All criteria recorded", "passed": false },
+        { "id": "crit-4-3", "label": "Fluidity maintained", "passed": true }
+      ]
+    },
+    {
+      "id": "comp-5",
+      "number": 5,
+      "name": "Appointment",
+      "score": 5,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-5-1", "label": "3 step booking process", "passed": true },
+        { "id": "crit-5-2", "label": "4 important factors covered", "passed": true },
+        { "id": "crit-5-3", "label": "Strong commitment received", "passed": true }
+      ]
+    },
+    {
+      "id": "comp-6",
+      "number": 6,
+      "name": "The Close",
+      "score": 3,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-6-1", "label": "Excitement demonstrated", "passed": true },
+        { "id": "crit-6-2", "label": "Strong edification", "passed": true },
+        { "id": "crit-6-3", "label": "2 step referral used", "passed": false }
+      ]
+    },
+    {
+      "id": "comp-7",
+      "number": 7,
+      "name": "Rapport",
+      "score": 4,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-7-1", "label": "Love/leadership balance", "passed": true },
+        { "id": "crit-7-2", "label": "Used prospect's name", "passed": true },
+        { "id": "crit-7-3", "label": "DISC implementation", "passed": true }
+      ]
+    },
+    {
+      "id": "comp-8",
+      "number": 8,
+      "name": "Pitch & Present",
+      "score": 4,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-8-1", "label": "Speed/tone match", "passed": true },
+        { "id": "crit-8-2", "label": "Articulated offering", "passed": true },
+        { "id": "crit-8-3", "label": "Push/pull balance", "passed": true }
+      ]
+    },
+    {
+      "id": "comp-9",
+      "number": 9,
+      "name": "Manage Objections",
+      "score": 2,
+      "maxScore": 5,
+      "criteria": [
+        { "id": "crit-9-1", "label": "Effective responses", "passed": false },
+        { "id": "crit-9-2", "label": "Sought clarification", "passed": false },
+        { "id": "crit-9-3", "label": "Transcending questions", "passed": true }
+      ]
+    }
+  ],
+  "labels": {
+    "preHeadline": "CALL ANALYSIS",
+    "headline": "Scorecard",
+    "competencyScoresHeading": "COMPETENCY SCORES",
+    "backToResults": "Back to Results",
+    "history": "History",
+    "new": "New"
+  }
+}
