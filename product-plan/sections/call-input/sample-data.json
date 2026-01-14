@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "models": {
+      "inputState": "Represents the current state of the input form (empty, has text, has file, or processing).",
+      "uploadedFile": "Information about a file that has been uploaded for analysis.",
+      "user": "Basic user info for displaying the logged-in state."
+    },
+    "relationships": [
+      "The input form has one inputState at any time",
+      "When a file is uploaded, uploadedFile contains its details"
+    ]
+  },
+  "sampleTranscript": "SARAH: Hi, this is Sarah from Ultimate Performance Academy. I'm calling because you downloaded our guide on scaling your business. Do you have a few minutes?\n\nPROSPECT: Yeah, I've got a few minutes. What's this about?\n\nSARAH: Great! So I wanted to quickly understand where you're at with your business right now and see if there might be a fit for our strategy session. What kind of business are you running?\n\nPROSPECT: I run a digital marketing agency. We've been going for about three years now.\n\nSARAH: Nice, congratulations on three years. That's a solid foundation. What made you download the guide? Was there something specific you were looking to solve?\n\nPROSPECT: Honestly, we've hit a bit of a ceiling. We're doing okay but I feel like we should be growing faster. I'm not sure what's holding us back.\n\nSARAH: I hear that a lot. When you say you've hit a ceiling, what does that look like in terms of revenue or team size?\n\nPROSPECT: We're at about 400k a year with a team of five. I thought we'd be at a million by now.\n\nSARAH: That gap between where you are and where you expected to be — that's frustrating. Have you identified what's causing the bottleneck?",
+  "sampleUploadedFile": {
+    "name": "triage-call-jan12.txt",
+    "size": 4250,
+    "type": "text/plain"
+  },
+  "inputStates": {
+    "empty": {
+      "status": "empty",
+      "hasContent": false,
+      "isProcessing": false
+    },
+    "hasText": {
+      "status": "hasText",
+      "hasContent": true,
+      "isProcessing": false
+    },
+    "hasFile": {
+      "status": "hasFile",
+      "hasContent": true,
+      "isProcessing": false
+    },
+    "processing": {
+      "status": "processing",
+      "hasContent": true,
+      "isProcessing": true
+    }
+  },
+  "processingMessages": {
+    "primary": "Analysing your call...",
+    "secondary": "This usually takes a few seconds."
+  },
+  "headlines": {
+    "loggedOut": "TriageCall Analyser surfaces the single highest-leverage moment in your calls.",
+    "loggedIn": "Analyse your call",
+    "loggedInSubheadline": "Paste your transcript below or upload a file."
+  },
+  "user": {
+    "id": "user-001",
+    "email": "sarah.mitchell@ultimateperformance.com",
+    "fullName": "Sarah Mitchell"
+  }
+}

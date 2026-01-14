@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "models": {
+      "analysis": "A complete call analysis record containing the AI-generated 4-part output: highest-leverage moment, what to improve, what was done well, and rule for next call.",
+      "feedbackPoint": "An individual piece of feedback within 'What to Improve' or 'What Went Well', organized by competency name."
+    },
+    "relationships": [
+      "Each Analysis contains one Highest Leverage Moment",
+      "Each Analysis contains multiple Feedback Points for improvements",
+      "Each Analysis contains multiple Feedback Points for strengths",
+      "Each Analysis contains one Rule for Next Call"
+    ]
+  },
+  "analysis": {
+    "id": "analysis-001",
+    "createdAt": "2026-01-12T14:32:00Z",
+    "totalScore": 32,
+    "maxScore": 45,
+    "scorePercentage": 71,
+    "highestLeverageMoment": {
+      "timestamp": "4:32",
+      "title": "Missed Opportunity to Explore the Budget Objection",
+      "description": "At 4:32, the prospect said \"I'm not sure we have the budget for this right now\" and the rep moved immediately to discussing payment plans rather than exploring the objection.",
+      "impact": "This was the critical moment where the call's direction was determined. The prospect had just revealed they were experiencing significant pain with their current situation. By jumping to solutions instead of deepening the problem awareness, the rep lost leverage and the prospect's buying temperature dropped noticeably.",
+      "evidence": "The prospect's tone shifted from engaged to hesitant after this exchange, and subsequent questions were met with shorter, more guarded responses."
+    },
+    "whatToImprove": [
+      {
+        "competency": "Manage Objections",
+        "title": "Seek Clarification Before Responding",
+        "description": "The rep did not seek clarification before responding to the budget objection. When the prospect said \"I'm not sure we have the budget\", the rep should have asked \"Help me understand — is it a timing issue or are you saying this isn't a priority right now?\"",
+        "evidence": "Jumped straight to payment plan options without understanding the real concern."
+      },
+      {
+        "competency": "Needs Analysis",
+        "title": "Quantify the Cost of the Problem",
+        "description": "While the rep asked good opening questions, they did not quantify the cost of the prospect's problem. Without establishing the financial impact, the value proposition had no anchor.",
+        "evidence": "The prospect mentioned losing deals but the rep didn't explore how many deals or the revenue impact."
+      },
+      {
+        "competency": "Qualification",
+        "title": "Confirm Decision-Maker Status",
+        "description": "Not all qualification criteria were covered. Decision-maker status and timeline were not confirmed before moving to the appointment stage.",
+        "evidence": "The rep assumed the prospect could make the decision alone without asking directly."
+      }
+    ],
+    "whatWentWell": [
+      {
+        "competency": "The Greeting",
+        "title": "Strong, Professional Opening",
+        "description": "The rep opened with high energy and got straight to the point. The introduction was fluid with no stuttering, immediately establishing professionalism.",
+        "evidence": "Clear, confident tone in the first 30 seconds. Prospect responded positively."
+      },
+      {
+        "competency": "Rapport",
+        "title": "Excellent Use of Prospect's Name",
+        "description": "Excellent use of the prospect's name throughout the call. The rep maintained a good balance of warmth and authority, adapting their communication style to match the prospect.",
+        "evidence": "Used the prospect's name 6 times naturally throughout the conversation."
+      },
+      {
+        "competency": "Pitch & Present",
+        "title": "Clear Articulation of Value",
+        "description": "The rep clearly articulated how the offering related to the prospect's stated needs. Tone and pace matched the prospect's energy level throughout.",
+        "evidence": "Connected each feature back to the specific pain points the prospect had mentioned."
+      }
+    ],
+    "ruleForNextCall": {
+      "rule": "Before responding to any objection, ask one clarifying question to understand the real concern behind the words.",
+      "example": "Help me understand — when you say [objection], what specifically is driving that concern?",
+      "rationale": "This single change would have transformed the budget objection into an opportunity to deepen the conversation and uncover the prospect's true priorities."
+    }
+  },
+  "currentStep": 1
+}

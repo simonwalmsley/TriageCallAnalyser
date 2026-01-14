@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "models": {
+      "user": "A person who uses the system to analyse their triage calls. Contains basic profile information for authentication.",
+      "formState": "Represents the current state of an authentication form (idle, loading, success, or error).",
+      "validationErrors": "Collection of inline error messages shown when form validation fails."
+    },
+    "relationships": [
+      "Each form has one formState that controls its behaviour",
+      "ValidationErrors are displayed inline next to their corresponding form fields"
+    ]
+  },
+  "sampleUsers": [
+    {
+      "id": "user-001",
+      "email": "sarah.mitchell@ultimateperformance.com",
+      "fullName": "Sarah Mitchell"
+    },
+    {
+      "id": "user-002",
+      "email": "james.chen@ultimateperformance.com",
+      "fullName": "James Chen"
+    }
+  ],
+  "formStates": {
+    "idle": {
+      "status": "idle",
+      "isLoading": false,
+      "error": null
+    },
+    "loading": {
+      "status": "loading",
+      "isLoading": true,
+      "error": null
+    },
+    "success": {
+      "status": "success",
+      "isLoading": false,
+      "error": null
+    },
+    "error": {
+      "status": "error",
+      "isLoading": false,
+      "error": "Invalid email or password. Please try again."
+    }
+  },
+  "validationErrors": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordMismatch": "Passwords do not match",
+    "confirmPasswordRequired": "Please confirm your password",
+    "invalidCredentials": "Invalid email or password. Please try again.",
+    "emailAlreadyExists": "An account with this email already exists",
+    "resetEmailSent": "If an account exists with this email, you'll receive a password reset link shortly.",
+    "resetLinkExpired": "This password reset link has expired. Please request a new one.",
+    "passwordResetSuccess": "Your password has been reset successfully. You can now sign in."
+  },
+  "sampleFormValues": {
+    "signIn": {
+      "email": "sarah.mitchell@ultimateperformance.com",
+      "password": ""
+    },
+    "signUp": {
+      "fullName": "Sarah Mitchell",
+      "email": "sarah.mitchell@ultimateperformance.com",
+      "password": "",
+      "confirmPassword": ""
+    },
+    "forgotPassword": {
+      "email": "sarah.mitchell@ultimateperformance.com"
+    },
+    "resetPassword": {
+      "newPassword": "",
+      "confirmNewPassword": ""
+    }
+  }
+}

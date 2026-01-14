@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(tasklist:*)",
+      "Bash(curl:*)",
+      "Bash(npx vite:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(taskkill:*)",
+      "Bash(timeout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd product definition and screen designs for TriageCall Analyser\n\n- Product overview, roadmap, data model, and design system\n- Screen designs for all 5 sections: Authentication, Call Input,\n  Analysis Results, Scorecard, and History\n- Application shell with header, footer bar, and user menu\n- Design tokens: teal/emerald palette with Inter typography\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(if exist product-plan.zip del product-plan.zip)",
+      "Bash(powershell -Command \"Compress-Archive -Path ''product-plan\\\\*'' -DestinationPath ''product-plan.zip'' -Force\")"
+    ]
+  }
+}

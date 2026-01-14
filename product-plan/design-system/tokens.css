@@ -1,0 +1,22 @@
+/* Design Tokens for TriageCall Analyser */
+
+:root {
+  /* Colors - Tailwind Color Palette */
+  --color-primary: theme('colors.teal');
+  --color-secondary: theme('colors.emerald');
+  --color-neutral: theme('colors.neutral');
+
+  /* Typography */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/*
+ * Note: These are reference tokens. In Tailwind CSS v4,
+ * use the built-in color utility classes directly:
+ *
+ * Primary: teal-500, teal-600, teal-700, etc.
+ * Secondary: emerald-500, emerald-600, emerald-700, etc.
+ * Neutral: neutral-50 through neutral-950
+ */

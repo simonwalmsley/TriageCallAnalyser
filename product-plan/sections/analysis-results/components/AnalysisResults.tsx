@@ -4,7 +4,7 @@ import type {
   HighestLeverageMoment,
   FeedbackPoint,
   RuleForNextCall,
-} from '@/../product/sections/analysis-results/types'
+} from '../types'
 
 const STEP_TITLES: Record<ResultStep, string> = {
   1: 'The Single Highest-Leverage Moment',

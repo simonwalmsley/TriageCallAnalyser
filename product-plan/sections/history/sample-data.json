@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "models": {
+      "historyItems": "A list of past call analyses, each showing the title, date/time, and score summary for quick browsing.",
+      "emptyState": "Content displayed when the user has no past analyses yet."
+    },
+    "relationships": [
+      "Each History Item represents a summary of an Analysis record",
+      "Clicking a History Item navigates to the full Analysis Results"
+    ]
+  },
+  "historyItems": [
+    {
+      "id": "analysis-001",
+      "title": "Call Analysis",
+      "timestamp": "2026-01-12T14:34:00",
+      "formattedDate": "12 January 2026, 2:34 PM",
+      "totalPoints": 32,
+      "maxPoints": 45,
+      "percentage": 71
+    },
+    {
+      "id": "analysis-002",
+      "title": "Call Analysis",
+      "timestamp": "2026-01-10T09:15:00",
+      "formattedDate": "10 January 2026, 9:15 AM",
+      "totalPoints": 28,
+      "maxPoints": 45,
+      "percentage": 62
+    },
+    {
+      "id": "analysis-003",
+      "title": "Call Analysis",
+      "timestamp": "2026-01-08T16:02:00",
+      "formattedDate": "8 January 2026, 4:02 PM",
+      "totalPoints": 35,
+      "maxPoints": 45,
+      "percentage": 78
+    },
+    {
+      "id": "analysis-004",
+      "title": "Call Analysis",
+      "timestamp": "2026-01-05T11:20:00",
+      "formattedDate": "5 January 2026, 11:20 AM",
+      "totalPoints": 22,
+      "maxPoints": 45,
+      "percentage": 49
+    },
+    {
+      "id": "analysis-005",
+      "title": "Call Analysis",
+      "timestamp": "2026-01-03T15:45:00",
+      "formattedDate": "3 January 2026, 3:45 PM",
+      "totalPoints": 38,
+      "maxPoints": 45,
+      "percentage": 84
+    },
+    {
+      "id": "analysis-006",
+      "title": "Call Analysis",
+      "timestamp": "2025-12-28T10:08:00",
+      "formattedDate": "28 December 2025, 10:08 AM",
+      "totalPoints": 30,
+      "maxPoints": 45,
+      "percentage": 67
+    }
+  ],
+  "emptyState": {
+    "message": "No analyses yet.",
+    "subtext": "Start your first analysis to see your history here.",
+    "ctaLabel": "Start Analysis"
+  },
+  "labels": {
+    "preHeadline": "YOUR ANALYSES",
+    "headline": "History",
+    "backToResults": "Back to Results",
+    "new": "New"
+  }
+}

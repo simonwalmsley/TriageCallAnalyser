@@ -29,6 +29,7 @@ export default function AnalysisResultsPreview() {
       onNextStep={handleNextStep}
       onPreviousStep={handlePreviousStep}
       onGoToStep={handleGoToStep}
+      onGoToTimestamp={(timestamp) => console.log('Go to timestamp:', timestamp)}
       onViewScorecard={() => console.log('View Scorecard')}
       onViewHistory={() => console.log('View History')}
       onNewAnalysis={() => console.log('Start New Analysis')}
